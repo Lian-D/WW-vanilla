@@ -1,0 +1,20 @@
+{
+  "feature": {
+    "type": "minecraft:simple_random_selector",
+    "config": {
+      "features": [
+        "wythers:trees/tree_components/dark_forest_giant_azalea_branches_high",
+        "wythers:trees/tree_components/dark_forest_giant_azalea_branches_high",
+        "wythers:trees/tree_components/dark_forest_giant_azalea_branches",
+        "wythers:trees/tree_components/giant_oak_trunk",
+        "wythers:trees/tree_components/giant_oak_trunk"
+      ]
+    }
+  },
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 5
+    }
+  ]
+}

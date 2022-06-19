@@ -1,0 +1,177 @@
+{
+  "feature": {
+    "type": "minecraft:random_patch",
+    "config": {
+      "tries": 50,
+      "xz_spread": 7,
+      "y_spread": 0,
+      "feature": {
+        "feature": {
+          "type": "minecraft:random_selector",
+          "config": {
+            "features": [
+              {
+                "chance": 0.50,
+                "feature": {
+                  "feature": {
+                    "type": "minecraft:simple_block",
+                    "config": {
+                      "to_place": {
+                        "type": "minecraft:weighted_state_provider",
+                        "entries": [
+                          {
+                            "weight": 3,
+                            "data": {
+                              "Name": "minecraft:moss_carpet"
+                            }
+                          },
+                          {
+                            "weight": 1,
+                            "data": {
+                              "Name": "minecraft:lily_of_the_valley"
+                            }
+                          },
+                          {
+                            "weight": 1,
+                            "data": {
+                              "Name": "minecraft:azalea"
+                            }
+                          },
+                          {
+                            "weight": 1,
+                            "data": {
+                              "Name": "minecraft:small_dripleaf",
+                              "Properties": {
+                                "facing": "north",
+                                "half": "lower",
+                                "waterlogged": "false"
+                              }
+                            }
+                          },
+                          {
+                            "weight": 1,
+                            "data": {
+                              "Name": "minecraft:small_dripleaf",
+                              "Properties": {
+                                "facing": "south",
+                                "half": "lower",
+                                "waterlogged": "false"
+                              }
+                            }
+                          },
+                          {
+                            "weight": 1,
+                            "data": {
+                              "Name": "minecraft:small_dripleaf",
+                              "Properties": {
+                                "facing": "west",
+                                "half": "lower",
+                                "waterlogged": "false"
+                              }
+                            }
+                          },
+                          {
+                            "weight": 1,
+                            "data": {
+                              "Name": "minecraft:small_dripleaf",
+                              "Properties": {
+                                "facing": "east",
+                                "half": "lower",
+                                "waterlogged": "false"
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  "placement": []
+                }
+              },
+              {
+                "chance": 0.10,
+                "feature": "wythers:block_columns/placed_melons_and_stems"
+              },
+              {
+                "chance": 0.20,
+                "feature": "wythers:block_columns/placed_potatoes"
+              },
+              {
+                "chance": 0.20,
+                "feature": "wythers:block_columns/placed_carrots"
+              },
+              {
+                "chance": 0.20,
+                "feature": "wythers:block_columns/placed_beets"
+              },
+              {
+                "chance": 0.15,
+                "feature": "wythers:block_columns/placed_melon_stems"
+              },
+              {
+                "chance": 0.15,
+                "feature": "wythers:block_columns/placed_mini_dripleaf"
+              },
+              {
+                "chance": 0.15,
+                "feature": "wythers:block_columns/placed_bamboo_shoot"
+              }
+            ],
+            "default": "wythers:block_columns/placed_oasis_bamboo"
+          }
+        },
+        "placement": [
+          {
+            "type": "minecraft:block_predicate_filter",
+            "predicate": {
+              "type": "minecraft:all_of",
+              "predicates": [
+                {
+                  "type": "minecraft:matching_blocks",
+                  "offset": [
+                    0,
+                    -1,
+                    0
+                  ],
+                  "blocks": [
+                    "minecraft:moss_block"
+                  ]
+                },
+                {
+                  "type": "minecraft:matching_blocks",
+                  "offset": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "blocks": [
+                    "minecraft:air"
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  },
+  "placement": [
+    {
+      "type": "minecraft:biome"
+    },
+    {
+      "type": "minecraft:count",
+      "count": 10
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:heightmap",
+      "heightmap": "WORLD_SURFACE"
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

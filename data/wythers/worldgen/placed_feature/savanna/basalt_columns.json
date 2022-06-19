@@ -1,0 +1,44 @@
+{
+  "feature": {
+    "type": "minecraft:random_selector",
+    "config": {
+      "features": [
+        {
+          "chance": 0.1,
+          "feature": "wythers:savanna/feature_basalt_columns_large"
+        }
+      ],
+      "default": "wythers:savanna/feature_basalt_columns_small"
+    }
+  },
+  "placement": [
+    {
+      "type": "minecraft:biome"
+    },
+    {
+      "type": "minecraft:noise_based_count",
+      "noise_to_count_ratio": 1,
+      "noise_factor": 2048,
+      "noise_offset": -0.6
+    },
+    {
+      "type": "minecraft:noise_based_count",
+      "noise_to_count_ratio": -1,
+      "noise_factor": 256,
+      "noise_offset": 0.1
+    },
+    {
+      "type": "minecraft:noise_based_count",
+      "noise_to_count_ratio": -3,
+      "noise_factor": 100,
+      "noise_offset": 0.1
+    },
+    {
+      "type": "minecraft:heightmap",
+      "heightmap": "MOTION_BLOCKING"
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

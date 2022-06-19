@@ -1,0 +1,19 @@
+{
+  "feature": "wythers:patch_waterlily_shallow",
+  "placement": [
+    {
+      "type": "minecraft:biome"
+    },
+    {
+      "count": 10,
+      "type": "minecraft:count"
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "heightmap": "WORLD_SURFACE_WG",
+      "type": "minecraft:heightmap"
+    }
+  ]
+}

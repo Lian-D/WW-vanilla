@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:simple_random_selector",
+  "config": {
+    "features": [
+      "wythers:block_columns/placed_pumpkin_and_stem_north",
+      "wythers:block_columns/placed_pumpkin_and_stem_south",
+      "wythers:block_columns/placed_pumpkin_and_stem_west",
+      "wythers:block_columns/placed_pumpkin_and_stem_east"
+    ]
+  }
+}

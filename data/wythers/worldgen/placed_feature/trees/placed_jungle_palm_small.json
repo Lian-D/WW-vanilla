@@ -1,0 +1,27 @@
+{
+  "feature": "wythers:trees/azalea_palm_mixed_straight_vines",
+  "placement": [
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:all_of",
+        "predicates": [
+          {
+            "type": "minecraft:would_survive",
+            "offset": [
+              0,
+              0,
+              0
+            ],
+            "state": {
+              "Name": "minecraft:jungle_sapling",
+              "Properties": {
+                "stage": "1"
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

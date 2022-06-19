@@ -1,0 +1,37 @@
+{
+  "feature": {
+    "type": "minecraft:simple_random_selector",
+    "config": {
+      "features": [
+        "wythers:trees/tree_components/giant_dead_dark_oak_branches_high",
+        "wythers:trees/tree_components/giant_dead_dark_oak_branches_high",
+        "wythers:trees/tree_components/giant_dead_dark_oak_branches_high",
+        "wythers:trees/tree_components/giant_dead_dark_oak_branches",
+        "wythers:trees/tree_components/giant_dead_dark_oak_trunk",
+        "wythers:trees/tree_components/giant_dead_dark_oak_trunk"
+      ]
+    }
+  },
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 6
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:matching_blocks",
+        "offset": [
+          0,
+          0,
+          0
+        ],
+        "blocks": [
+          "minecraft:water",
+          "minecraft:stripped_dark_oak_log",
+          "minecraft:stripped_dark_oak_wood"
+        ]
+      }
+    }
+  ]
+}

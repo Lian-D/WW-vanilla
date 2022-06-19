@@ -1,0 +1,14 @@
+{
+  "feature": {
+    "type": "minecraft:simple_random_selector",
+    "config": {
+      "features": [
+        "wythers:large_drip_weed_n",
+        "wythers:large_drip_weed_s",
+        "wythers:large_drip_weed_e",
+        "wythers:large_drip_weed_w"
+      ]
+    }
+  },
+  "placement": []
+}

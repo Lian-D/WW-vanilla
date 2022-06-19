@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:stone",
+    "minecraft:diorite",
+    "minecraft:calcite",
+    "minecraft:smooth_quartz",
+    "minecraft:snow",
+    "minecraft:powder_snow",
+    "minecraft:snow_block",
+    "minecraft:packed_ice",
+    "minecraft:gravel",
+    "#minecraft:terracotta"
+  ]
+}

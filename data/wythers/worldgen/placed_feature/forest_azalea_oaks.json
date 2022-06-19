@@ -1,0 +1,76 @@
+{
+  "feature": {
+    "type": "minecraft:random_selector",
+    "config": {
+      "features": [
+        {
+          "chance": 0.005,
+          "feature": "wythers:trees/placed_giant_azalea"
+        },
+        {
+          "chance": 0.0025,
+          "feature": "wythers:block_columns/placed_fallen_stripped_oak_log_north"
+        },
+        {
+          "chance": 0.0025,
+          "feature": "wythers:block_columns/placed_fallen_stripped_oak_log_south"
+        },
+        {
+          "chance": 0.0025,
+          "feature": "wythers:block_columns/placed_fallen_stripped_oak_log_east"
+        },
+        {
+          "chance": 0.0025,
+          "feature": "wythers:block_columns/placed_fallen_stripped_oak_log_west"
+        },
+        {
+          "chance": 0.3,
+          "feature": "wythers:block_columns/placed_oak_sapling"
+        },
+        {
+          "chance": 0.1,
+          "feature": "wythers:trees/placed_azalea_leaf_fancy_oak_stripped"
+        },
+        {
+          "chance": 0.4,
+          "feature": "wythers:trees/placed_azalea_leaf_fancy_oak"
+        }
+      ],
+      "default": "wythers:fancy_oak"
+    }
+  },
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 15
+    },
+    {
+      "type": "minecraft:noise_based_count",
+      "noise_to_count_ratio": -1,
+      "noise_factor": 250,
+      "noise_offset": 0.3
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:heightmap",
+      "heightmap": "MOTION_BLOCKING"
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:would_survive",
+        "state": {
+          "Name": "minecraft:oak_sapling",
+          "Properties": {
+            "stage": "0"
+          }
+        }
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

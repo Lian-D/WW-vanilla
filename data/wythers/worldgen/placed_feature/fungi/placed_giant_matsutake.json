@@ -1,0 +1,9 @@
+{
+  "feature": "wythers:fungi/giant_matsutake",
+  "placement": [
+    {
+      "type": "minecraft:heightmap",
+      "heightmap": "WORLD_SURFACE_WG"
+    }
+  ]
+}

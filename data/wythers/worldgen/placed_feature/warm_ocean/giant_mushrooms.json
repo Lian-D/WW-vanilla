@@ -1,0 +1,58 @@
+{
+  "feature": {
+    "type": "minecraft:random_selector",
+    "config": {
+      "features": [
+        {
+          "chance": 0.4,
+          "feature": "wythers:warm_ocean/mushroom_huge_brown_sprout"
+        },
+        {
+          "chance": 0.2,
+          "feature": "wythers:warm_ocean/mushroom_huge_red_branching"
+        },
+        {
+          "chance": 0.1,
+          "feature": "wythers:warm_ocean/huge_red_mushroom"
+        },
+        {
+          "chance": 0.3,
+          "feature": "wythers:warm_ocean/huge_brown_mushroom"
+        }
+      ],
+      "default": "wythers:warm_ocean/mushroom_huge_enoki"
+    }
+  },
+  "placement": [
+    {
+      "type": "minecraft:noise_based_count",
+      "noise_to_count_ratio": -3,
+      "noise_factor": 150,
+      "noise_offset": -0.3
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:heightmap",
+      "heightmap": "MOTION_BLOCKING"
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:matching_blocks",
+        "offset": [
+          0,
+          -1,
+          0
+        ],
+        "blocks": [
+          "minecraft:mycelium"
+        ]
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

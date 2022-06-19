@@ -1,0 +1,17 @@
+{
+  "feature": {
+    "type": "minecraft:random_patch",
+    "config": {
+      "tries": 3,
+      "xz_spread": 9,
+      "y_spread": 4,
+      "feature": "wythers:fungi/placed_giant_morel"
+    }
+  },
+  "placement": [
+    {
+      "type": "minecraft:heightmap",
+      "heightmap": "WORLD_SURFACE_WG"
+    }
+  ]
+}

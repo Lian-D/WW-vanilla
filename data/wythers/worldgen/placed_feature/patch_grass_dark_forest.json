@@ -1,0 +1,19 @@
+{
+  "feature": "wythers:patch_grass_and_ferns_large_and_small",
+  "placement": [
+    {
+      "count": 25,
+      "type": "minecraft:count"
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "heightmap": "WORLD_SURFACE_WG",
+      "type": "minecraft:heightmap"
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

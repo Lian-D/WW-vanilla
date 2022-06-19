@@ -1,0 +1,54 @@
+{
+  "feature": {
+    "type": "minecraft:random_selector",
+    "config": {
+      "features": [
+        {
+          "chance": 0.25,
+          "feature": "wythers:trees/placed_leaf_vine_palm"
+        },
+        {
+          "chance": 0.05,
+          "feature": "wythers:warm_ocean/feature_tree_bush"
+        },
+        {
+          "chance": 0.25,
+          "feature": "wythers:warm_ocean/feature_tree_oak"
+        },
+        {
+          "chance": 0.25,
+          "feature": "wythers:trees/placed_giant_azalea"
+        }
+      ],
+      "default": "wythers:trees/placed_leaf_vine_palm"
+    }
+  },
+  "placement": [
+    {
+      "type": "minecraft:noise_based_count",
+      "noise_to_count_ratio": -1,
+      "noise_factor": 300,
+      "noise_offset": 0
+    },
+    {
+      "type": "minecraft:noise_based_count",
+      "noise_to_count_ratio": 5,
+      "noise_factor": 200,
+      "noise_offset": 0
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:surface_water_depth_filter",
+      "max_water_depth": 0
+    },
+    {
+      "type": "minecraft:heightmap",
+      "heightmap": "OCEAN_FLOOR"
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

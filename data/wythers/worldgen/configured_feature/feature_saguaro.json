@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:simple_random_selector",
+    "config": {
+      "features": [
+        "wythers:block_columns/placed_saguaro_1",
+        "wythers:block_columns/placed_saguaro_2",
+        "wythers:block_columns/placed_saguaro_3",
+        "wythers:block_columns/placed_saguaro_4",
+        "wythers:block_columns/placed_saguaro_5",
+        "wythers:block_columns/placed_saguaro_6",
+        "wythers:block_columns/placed_saguaro_7",
+        "wythers:block_columns/placed_saguaro_8",
+        "wythers:block_columns/placed_saguaro_9",
+        "wythers:block_columns/placed_saguaro_10",
+        "wythers:block_columns/placed_saguaro_11",
+        "wythers:block_columns/placed_saguaro_12",
+        "wythers:block_columns/placed_saguaro_13",
+        "wythers:block_columns/placed_saguaro_14"
+      ]
+    }
+  }

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:random_selector",
+  "config": {
+    "features": [
+      {
+        "chance": 0.2,
+        "feature": "wythers:fire_coral_1"
+      }
+    ],
+    "default": "wythers:fire_coral_2"
+  }
+}

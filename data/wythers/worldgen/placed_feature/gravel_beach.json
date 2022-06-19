@@ -1,0 +1,69 @@
+{
+  "feature": {
+    "type": "minecraft:disk",
+    "config": {
+      "state": {
+        "Name": "minecraft:gravel"
+      },
+      "radius": {
+        "type": "minecraft:uniform",
+        "value": {
+          "min_inclusive": 2,
+          "max_inclusive": 5
+        }
+      },
+      "half_height": 1,
+      "targets": [
+        {
+          "Name": "minecraft:dirt_path"
+        },
+        {
+          "Name": "minecraft:dirt"
+        },
+        {
+          "Name": "minecraft:gravel"
+        },
+        {
+          "Name": "minecraft:grass_block",
+          "Properties": {
+            "snowy": "false"
+          }
+        },
+        {
+          "Name": "minecraft:grass_block",
+          "Properties": {
+            "snowy": "true"
+          }
+        },
+        {
+          "Name": "minecraft:sand"
+        },
+        {
+          "Name": "minecraft:coarse_dirt"
+        },
+        {
+          "Name": "minecraft:rooted_dirt"
+        },
+        {
+          "Name": "minecraft:red_sand"
+        }
+      ]
+    }
+  },
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 256
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:heightmap",
+      "heightmap": "OCEAN_FLOOR_WG"
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

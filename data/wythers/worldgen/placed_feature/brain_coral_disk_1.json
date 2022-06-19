@@ -1,0 +1,205 @@
+{
+  "feature": {
+    "type": "minecraft:tree",
+    "config": {
+      "ignore_vines": true,
+      "force_dirt": false,
+      "minimum_size": {
+        "type": "minecraft:two_layers_feature_size",
+        "limit": 1,
+        "lower_size": 0,
+        "upper_size": 2
+      },
+      "dirt_provider": {
+        "type": "minecraft:simple_state_provider",
+        "state": {
+          "Name": "minecraft:water",
+          "Properties": {
+            "level": "0"
+          }
+        }
+      },
+      "trunk_provider": {
+        "type": "minecraft:simple_state_provider",
+        "state": {
+          "Name": "minecraft:brain_coral_block"
+        }
+      },
+      "foliage_provider": {
+        "type": "minecraft:weighted_state_provider",
+        "entries": [
+          {
+            "weight": 1,
+            "data": {
+              "Name": "minecraft:water",
+              "Properties": {
+                "level": "0"
+              }
+            }
+          },
+          {
+            "weight": 5,
+            "data": {
+              "Name": "minecraft:brain_coral_block"
+            }
+          }
+        ]
+      },
+      "trunk_placer": {
+        "type": "minecraft:straight_trunk_placer",
+        "base_height": 0,
+        "height_rand_a": 0,
+        "height_rand_b": 0
+      },
+      "foliage_placer": {
+        "type": "minecraft:fancy_foliage_placer",
+        "radius": 3,
+        "offset": 0,
+        "height": 0
+      },
+      "decorators": []
+    }
+  },
+  "placement": [
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:matching_fluids",
+        "fluids": [
+          "minecraft:water"
+        ]
+      }
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:matching_blocks",
+        "offset": [
+          0,
+          -1,
+          0
+        ],
+        "blocks": [
+          "minecraft:water",
+          "minecraft:bubble_coral_block",
+          "minecraft:brain_coral_block",
+          "minecraft:fire_coral_block",
+          "minecraft:tube_coral_block",
+          "minecraft:horn_coral_block"
+        ]
+      }
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:any_of",
+        "predicates": [
+          {
+            "type": "minecraft:matching_blocks",
+            "offset": [
+              1,
+              0,
+              1
+            ],
+            "blocks": [
+              "minecraft:sand",
+              "minecraft:stone",
+              "minecraft:brain_coral_block"
+            ]
+          },
+          {
+            "type": "minecraft:matching_blocks",
+            "offset": [
+              1,
+              0,
+              0
+            ],
+            "blocks": [
+              "minecraft:sand",
+              "minecraft:stone",
+              "minecraft:brain_coral_block"
+            ]
+          },
+          {
+            "type": "minecraft:matching_blocks",
+            "offset": [
+              1,
+              0,
+              -1
+            ],
+            "blocks": [
+              "minecraft:sand",
+              "minecraft:stone",
+              "minecraft:brain_coral_block"
+            ]
+          },
+          {
+            "type": "minecraft:matching_blocks",
+            "offset": [
+              0,
+              0,
+              1
+            ],
+            "blocks": [
+              "minecraft:sand",
+              "minecraft:stone",
+              "minecraft:brain_coral_block"
+            ]
+          },
+          {
+            "type": "minecraft:matching_blocks",
+            "offset": [
+              0,
+              0,
+              -1
+            ],
+            "blocks": [
+              "minecraft:sand",
+              "minecraft:stone",
+              "minecraft:brain_coral_block"
+            ]
+          },
+          {
+            "type": "minecraft:matching_blocks",
+            "offset": [
+              -1,
+              0,
+              1
+            ],
+            "blocks": [
+              "minecraft:sand",
+              "minecraft:stone",
+              "minecraft:brain_coral_block"
+            ]
+          },
+          {
+            "type": "minecraft:matching_blocks",
+            "offset": [
+              -1,
+              0,
+              0
+            ],
+            "blocks": [
+              "minecraft:sand",
+              "minecraft:stone",
+              "minecraft:brain_coral_block"
+            ]
+          },
+          {
+            "type": "minecraft:matching_blocks",
+            "offset": [
+              -1,
+              0,
+              -1
+            ],
+            "blocks": [
+              "minecraft:sand",
+              "minecraft:stone",
+              "minecraft:brain_coral_block"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

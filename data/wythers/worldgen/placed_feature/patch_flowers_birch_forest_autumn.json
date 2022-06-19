@@ -1,0 +1,21 @@
+{
+  "feature": "wythers:patch_autumnal_flowers",
+  "placement": [
+    {
+      "type": "minecraft:noise_based_count",
+      "noise_to_count_ratio": 6,
+      "noise_factor": 250,
+      "noise_offset": -0.3
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "heightmap": "WORLD_SURFACE_WG",
+      "type": "minecraft:heightmap"
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

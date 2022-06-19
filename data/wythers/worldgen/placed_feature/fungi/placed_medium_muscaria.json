@@ -1,0 +1,9 @@
+{
+  "feature": "wythers:fungi/medium_muscaria",
+  "placement": [
+    {
+      "type": "minecraft:heightmap",
+      "heightmap": "WORLD_SURFACE_WG"
+    }
+  ]
+}

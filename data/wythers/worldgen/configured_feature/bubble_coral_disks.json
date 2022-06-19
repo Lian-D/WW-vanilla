@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:random_selector",
+  "config": {
+    "features": [
+      {
+        "chance": 0.3,
+        "feature": "wythers:brain_coral_disk_1"
+      },
+      {
+        "chance": 0.3,
+        "feature": "wythers:tube_coral_disk_1"
+      }
+    ],
+    "default": "wythers:bubble_coral_disk_1"
+  }
+}

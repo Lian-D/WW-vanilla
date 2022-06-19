@@ -1,0 +1,42 @@
+{
+  "feature": {
+    "type": "minecraft:random_selector",
+    "config": {
+      "features": [
+        {
+          "chance": 0.005,
+          "feature": "wythers:trees/placed_baobab_bloated_tall"
+        },
+        {
+          "chance": 0.005,
+          "feature": "wythers:trees/placed_baobab_bloated_short"
+        }
+      ],
+      "default": "wythers:trees/placed_woodland_acacia"
+    }
+  },
+  "placement": [
+    {
+      "type": "minecraft:noise_based_count",
+      "noise_to_count_ratio": 100,
+      "noise_factor": 256,
+      "noise_offset": -0.5
+    },
+    {
+      "type": "minecraft:noise_based_count",
+      "noise_to_count_ratio": -1,
+      "noise_factor": 2048,
+      "noise_offset": -0.6
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:heightmap",
+      "heightmap": "MOTION_BLOCKING"
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "feature": {
+    "type": "minecraft:simple_random_selector",
+    "config": {
+      "features": [
+        "wythers:small_drip_weed_n",
+        "wythers:small_drip_weed_s",
+        "wythers:small_drip_weed_e",
+        "wythers:small_drip_weed_w"
+      ]
+    }
+  },
+  "placement": []
+}

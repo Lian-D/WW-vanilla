@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:simple_random_selector",
+  "config": {
+    "features": [
+      "wythers:brain_coral_1",
+      "wythers:brain_coral_2",
+      "wythers:brain_coral_3"
+    ]
+  }
+}
